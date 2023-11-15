@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "HankenGrotesk-VariableFont_wght";
+    src: url("fonts\HankenGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "HankenGrotesk-Bold";
+    src: url("fonts\static\HankenGrotesk-Bold.ttf");
+}
+
+
+.summary_square {
+    width: 700px;
+    height: 500px;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: rgb(203, 199, 152);
+}
+
+.yr_square {
+    width: 350px;
+    height: 500px;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 0;
+    float: left;
+    background-color: blue;
+    color: white;
+}
+
+.yr_text_style {
+    text-align: center;
+    font-size: 24px;
+    padding: 30px;
+    font-family: "HankenGrotesk-Bold";
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 75px;
+    background-color: blueviolet;
+}
+
+.text_in_circle_style {
+    
+    text-align: center;
+   
+}
+
+b {
+    font-size: 50px;
+}
+
+.great_style {
+    text-align: center;
+    font-size: 30px;
+}
+
+.note_style {
+    text-align: center;
+    font-size: 18px;
+}
+
+.summer_text {
+    text-align: left;
+    font-size: 24px;
+    float: right;
+    margin-right: 210px;
+    margin-top: 50px;
+}
+
+
+.reaction_block {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+    background-color: rgb(242, 151, 144);
+}
+
+.memory_block {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+    background-color: rgb(189, 229, 107);
+}
+
+.verbal_block {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+    background-color: rgb(164, 234, 24);
+}
+
+.visual_block {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+    background-color: rgb(129, 106, 210);
+}
+
+.w_set {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.text_target {
+    margin-top: 15px;
+    margin-right: 5px;
+    float: right;
+    
+}
+
+.button {
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    float: right;
+    margin-top: 40px;
+    margin-right: 60px;
+    background-color: rgb(44, 8, 173);
+    font-size: 16px;
+}

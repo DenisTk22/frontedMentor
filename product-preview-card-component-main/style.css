@@ -1,0 +1,84 @@
+
+body {
+    margin-left: 25%;
+}
+
+.common {
+    width: 800px;
+    height: 600px;
+    border-radius: 50px;
+    background-color: rgb(212, 146, 66);
+}
+
+.imag {
+    width: auto;
+    height: 600px;
+    border-radius: 50px 0 0 50px;
+}
+
+.right_side {
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 400px;
+    height: 600px;
+    border-radius: 0 50px 50px 0;
+    background-color: rgb(236, 232, 241);
+}
+
+.alignment {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.text_P {
+    color: rgb(88, 92, 90);
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_G {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.text_A {
+    font-size: 22px;
+    width: 320px;
+    color: rgb(133, 130, 130);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.text_S {
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(3, 57, 41);
+}
+
+
+.button {
+    color: white;
+    background-color: rgb(3, 57, 41);
+    width: 300px;
+    height: 50px;
+    margin-right: 60px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: none;
+    float: right;
+}
+
+svg {
+    padding-right: 10px;
+}
+
+.discount {
+    font-size: 24px;
+    float: right;
+    text-decoration:line-through;
+    margin-top: 17px;
+    padding-right: 70px;
+    color: rgb(133, 130, 130);
+}
