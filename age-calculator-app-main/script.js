@@ -22,9 +22,6 @@ console.log(currentDay);
 console.log(currentMonth);
 console.log(currentYear);
 console.log(yourDayEl.textContent);
-// yearEl.textContent = '41';
-
-// const yourDateInString = String(yourMonthEl.value);
 
 const yourDateInString = String(String(yourMonthEl.value) + '/' + String(yourDayEl.value) + '/' + String(yourYearEl.value));
 
@@ -49,9 +46,6 @@ function getNumberOfDays(start, end) {
 }
 
 
-// console.log(getNumberOfDays("1/30/2024", currentDate));
-
-
 const buttonClick = () => {
     const yourDateInString = String(String(yourMonthEl.value) + '/' + String(yourDayEl.value) + '/' + String(yourYearEl.value));
 
@@ -61,24 +55,27 @@ const buttonClick = () => {
     let countYear = parseInt(NumberOfDays / 365);
     
     let vesokosniyDays =  parseInt(countYear / 4);
-    let daysOver = (NumberOfDays - (countYear * 365)) - vesokosniyDays; 
-
-    // let element = NumberOfDays - 365;
-    // while (element > 365) {
-    //     element = element - 365;
-    //     countYear++;
-    // } 
+    let daysOver = (NumberOfDays - (countYear * 365)) - vesokosniyDays;  
 
     console.log(`Всего дней ${NumberOfDays}`);
     console.log(`Целых лет ${countYear}`)
-    console.log(`Остаток дней ${daysOver}`);
-    
-    
-    // console.log(yourDayEl.value + '/' + yourMonthEl.value + '/' + yourYearEl.value);
+    console.log(`Сверх Дней ${daysOver}`);
 
-    // yearEl.textContent = currentYear - yourYearEl.value;
-    // monthEl.textContent = yourMonthEl.value;
-    // dayEl.textContent = NumberOfDays;
+    let monthsOver = 0;
+    let fanalyDaysOver = daysOver;
+    
+    if (daysOver >= 30) {
+        monthsOver = parseInt(daysOver / 30);
+        fanalyDaysOver = daysOver - (monthsOver * 30);
+    }
+
+    console.log(`Месяцев ${monthsOver}`);
+    console.log(`Дней ${fanalyDaysOver}`);
+
+
+    yearEl.textContent = countYear;
+    monthEl.textContent = monthsOver;
+    dayEl.textContent = fanalyDaysOver;
 };
 
 buttonEl.addEventListener('click', buttonClick);
