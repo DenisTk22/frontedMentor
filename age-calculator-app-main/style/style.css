@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,6 +31,9 @@ body {
   width: 150px;
   height: 50px;
   border-radius: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 24px;
 }
 .content__separator {
   position: relative;
@@ -48,6 +52,7 @@ body {
   height: 50px;
   border-radius: 50%;
   background-color: hsl(259, 100%, 65%);
+  border: none;
 }
 .ageInfo {
   font-size: 80px;

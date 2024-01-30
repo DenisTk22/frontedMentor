@@ -22,32 +22,34 @@
         <div class="content__input">
           <p class="content__input_title">Day</p>
           <form action="#" class="content__input-form">
-            <input class="content__input-form_feld" type="text">
+            <input class="content__input-form_day" type="number" min="1" max="31">
           </form>
         </div>
         <div class="content__input">
           <p class="content__input_title">Month</p>
           <form action="#" class="content__input-form">
-            <input class="content__input-form_feld" type="text">
+            <input class="content__input-form_month" type="number" min="1" max="12">
           </form>
         </div>
         <div class="content__input">
           <p class="content__input_title">Year</p>
           <form action="#" class="content__input-form">
-            <input class="content__input-form_feld" type="text">
+            <input class="content__input-form_year" type="number" min="1900" max="2024">
           </form>
         </div>
       </section>
       <section class="content__separator">
         <div class="content__line"></div>
-        <div class="content__arrow"></div>
+        <button class="content__arrow"></button>
       </section>
       <section class="content__yourAge">
-        <p class="ageInfo"><span class="ageInfo__digit"></span>years</p>
-        <p class="ageInfo"><span class="ageInfo__digit"></span>months</p>
-        <p class="ageInfo"><span class="ageInfo__digit"></span>days</p>
+        <p class="ageInfo"><span class="ageInfo__digit-years"></span> years</p>
+        <p class="ageInfo"><span class="ageInfo__digit-months"></span> months</p>
+        <p class="ageInfo"><span class="ageInfo__digit-days"></span> days</p>
       </section>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

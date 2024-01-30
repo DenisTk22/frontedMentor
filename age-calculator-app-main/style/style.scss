@@ -11,6 +11,7 @@ $mainBorder: 1px solid black;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -47,6 +48,10 @@ body{
             width: 150px;
             height: 50px;
             border-radius: 7px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 24px;
+
         }
     }
 
@@ -69,6 +74,7 @@ body{
         height: 50px;
         border-radius: 50%;
         background-color: $mainPurple;
+        border: none;
     }
 
     &__yourAge {
