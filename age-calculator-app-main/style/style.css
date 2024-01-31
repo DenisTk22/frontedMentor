@@ -56,4 +56,8 @@ body {
 }
 .ageInfo {
   font-size: 80px;
+}
+.ageInfo__digit {
+  color: hsl(259, 100%, 65%);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

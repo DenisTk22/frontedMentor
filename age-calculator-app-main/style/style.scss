@@ -84,4 +84,9 @@ body{
 
 .ageInfo {
     font-size: 80px;
+
+    &__digit {
+        color: $mainPurple;
+        font-weight: bold;
+    }
 }

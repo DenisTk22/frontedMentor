@@ -20,22 +20,25 @@
     <div class="content">
       <section class="content__birthdayInput">
         <div class="content__input">
-          <p class="content__input_title">Day</p>
+          <p class="content__input_title content__input_title-day">Day</p>
           <form action="#" class="content__input-form">
-            <input class="content__input-form_day" type="number" min="1" max="31">
+            <input class="content__input-form_day content__input-form_feld" type="number">
           </form>
+          <p class="errorDay"></p>
         </div>
         <div class="content__input">
-          <p class="content__input_title">Month</p>
+          <p class="content__input_title content__input_title-month">Month</p>
           <form action="#" class="content__input-form">
-            <input class="content__input-form_month" type="number" min="1" max="12">
+            <input class="content__input-form_month content__input-form_feld" type="number">
           </form>
+          <p class="errorMonth"></p>
         </div>
         <div class="content__input">
-          <p class="content__input_title">Year</p>
+          <p class="content__input_title content__input_title-year">Year</p>
           <form action="#" class="content__input-form">
-            <input class="content__input-form_year" type="number" min="1900" max="2024">
+            <input class="content__input-form_year content__input-form_feld" type="number">
           </form>
+          <p class="errorYear"></p>
         </div>
       </section>
       <section class="content__separator">
@@ -43,9 +46,9 @@
         <button class="content__arrow"></button>
       </section>
       <section class="content__yourAge">
-        <p class="ageInfo"><span class="ageInfo__digit-years">YY</span> years</p>
-        <p class="ageInfo"><span class="ageInfo__digit-months">MM</span> months</p>
-        <p class="ageInfo"><span class="ageInfo__digit-days">DD</span> days</p>
+        <p class="ageInfo"><span class="ageInfo__digit-years ageInfo__digit">YY</span> years</p>
+        <p class="ageInfo"><span class="ageInfo__digit-months ageInfo__digit">MM</span> months</p>
+        <p class="ageInfo"><span class="ageInfo__digit-days ageInfo__digit">DD</span> days</p>
       </section>
     </div>
   </main>
