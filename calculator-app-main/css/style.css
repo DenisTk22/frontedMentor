@@ -18,14 +18,25 @@
 .calc__themes {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .calc__themes_switcher {
   display: flex;
   gap: 15px;
   align-items: center;
 }
+.calc__themes_switcher_form {
+  display: flex;
+  padding: 3px;
+  background-color: #000;
+  border-radius: 12px;
+}
 .calc__screen {
   resize: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 50px;
+  text-align: right;
 }
 .calc__themes {
   width: 100%;

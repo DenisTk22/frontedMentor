@@ -18,16 +18,30 @@
     &__themes {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         &_switcher {
             display: flex;
             gap: 15px;
             align-items: center;
+
+            &_form {
+                display: flex;
+                padding: 3px;
+                background-color: #000;
+                border-radius: 12px;
+        
+            }
         }
     }
 
+
     &__screen {
         resize: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 50px;
+        text-align: right;
     }
 
     &__themes {
