@@ -13,7 +13,7 @@ let action = '';
 
 calcButtonsEl.addEventListener('click', e => {
 
-    if (e.target.classList.contains('calc__buttons_digit')) {
+    if (e.target.classList.contains(classDigit)) {
         if (signal === false) { 
         temp = e.target.textContent;
         d1 = d1 + temp;
@@ -26,7 +26,7 @@ calcButtonsEl.addEventListener('click', e => {
             calcScreenEl.textContent = d2;
         }
     };
-    if (e.target.classList.contains('calc__buttons_dot')) {
+    if (e.target.classList.contains(classDot)) {
         count++;
         if (count === 1 && secondDigit === false) {
             temp = e.target.textContent;
@@ -39,7 +39,7 @@ calcButtonsEl.addEventListener('click', e => {
             calcScreenEl.textContent = d2;
         } else return;
     }
-    if (e.target.classList.contains('calc__buttons_button-reset')) {
+    if (e.target.classList.contains(classReset)) {
         calcScreenEl.textContent = '';
         d1 = '';
         d2 = '';
@@ -47,37 +47,43 @@ calcButtonsEl.addEventListener('click', e => {
         signal = false;
         secondDigit = false;
     };
-    if (e.target.classList.contains('calc__buttons_delete')) {
+    if (e.target.classList.contains(classDelete)) {
         let del = calcScreenEl.textContent;
         del = del.substring(0, del.length - 1);
-        // console.log(del);
-        calcScreenEl.textContent = del;
+        if (signal === false) {
+            calcScreenEl.textContent = del;
+            d1 = del;
+        } else {
+            calcScreenEl.textContent = del;
+            d2 = del;
+        }
+        
     };
-    if (e.target.classList.contains('calc__buttons_plus')) {
+    if (e.target.classList.contains(classPluse)) {
         temp = '';
         count = 0;
         signal = true;
         action = operation[0];
     };
-    if (e.target.classList.contains('calc__buttons_minus')) {
+    if (e.target.classList.contains(classMinus)) {
         temp = '';
         count = 0;
         signal = true;
         action = operation[1];
     };
-    if (e.target.classList.contains('calc__buttons_multiplay')) {
+    if (e.target.classList.contains(classMulty)) {
         temp = '';
         count = 0;
         signal = true;
         action = operation[2];
     };
-    if (e.target.classList.contains('calc__buttons_divide')) {
+    if (e.target.classList.contains(classDiv)) {
         temp = '';
         count = 0;
         signal = true;
         action = operation[3];
     };
-    if (e.target.classList.contains('calc__buttons_button-equally')) {
+    if (e.target.classList.contains(classEqually)) {
         d1 = parseFloat(d1);
         d2 = parseFloat(d2);
         if (action === operation[0]) { // сумма
