@@ -25,51 +25,14 @@
         </div>
       </section>
       <textarea class="calc__screen"></textarea>
-      <section class="calc__buttons">
-        <!-- <button class="calc__buttons_button calc__buttons_digit">7</button>
-        <button class="calc__buttons_button calc__buttons_digit">8</button>
-        <button class="calc__buttons_button calc__buttons_digit">9</button>
-        <button class="calc__buttons_button calc__buttons_delete">DEL</button>
-        <button class="calc__buttons_button calc__buttons_digit">4</button>
-        <button class="calc__buttons_button calc__buttons_digit">5</button>
-        <button class="calc__buttons_button calc__buttons_digit">6</button>
-        <button class="calc__buttons_button calc__buttons_plus">+</button>
-        <button class="calc__buttons_button calc__buttons_digit">1</button>
-        <button class="calc__buttons_button calc__buttons_digit">2</button>
-        <button class="calc__buttons_button calc__buttons_digit">3</button>
-        <button class="calc__buttons_button calc__buttons_minus">-</button>
-        <button class="calc__buttons_button calc__buttons_dot">.</button>
-        <button class="calc__buttons_button calc__buttons_digit">0</button>
-        <button class="calc__buttons_button calc__buttons_divide">/</button>
-        <button class="calc__buttons_button calc__buttons_multiplay">*</button>
-        <button class="calc__buttons_button-reset calc__buttons_button">RESET</button>
-        <button class="calc__buttons_button-equally calc__buttons_button">=</button> -->
-      </section>
+      <section class="calc__buttons"></section> <!--кнопки прописаны в buttons.js-->
     </div>
   </main>
 
-  
-  
-<!-- document.getElementById("_1234").checked = true; -->
 
-  <script>
-    const calcBodyEl = document.querySelector('.calc-body');
-
-    const themeClassicEl = document.querySelector('.theme-form_theme-classic');
-    const themeDarkEl = document.querySelector('.theme-form_theme-dark');
-    const themeLightEl = document.querySelector('.theme-form_theme-light');
-
-    // if (themeClassicEl.hasAttribute('checked')) {
-    //   calcBodyEl.style.backgroundColor = 'green';
-    // }
-
-    if (themeDarkEl.checked) {
-      calcBodyEl.style.backgroundColor = 'darkblue';
-    }
-
-
-  </script>
+  <!-- <script></script> -->
   <script src="buttons.js"></script>
   <script src="calcLogic.js"></script>
+  <script src="themes.js"></script>
 </body>
 </html>

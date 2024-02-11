@@ -89,19 +89,17 @@
             grid-column: 3/5;
         }
     }
-
-
 }
 
-.theme-form {
+// .theme-form {
 
-    &_theme-classic:checked ~ calc-body{
+//     &_theme-classic:checked ~ calc-body{
   
-        background-color: goldenrod;
+//         background-color: goldenrod;
             
-    };
+//     };
 
-    &_theme-dark:checked {
+//     // &_theme-dark:checked {
 
-    }
-}
+//     // }
+// }
