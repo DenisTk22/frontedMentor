@@ -12,7 +12,8 @@ calcThemesEl.addEventListener('change', e => {
         calcBodyEl.style.backgroundColor = 'gainsboro';
     } 
     if (e.target.className === 'theme-form_theme-dark') {
-        calcBodyEl.style.backgroundColor = 'darkblue';
+        calcBodyEl.style.backgroundColor = '#524545';
+    
     }
     if (e.target.className === 'theme-form_theme-light') {
         calcBodyEl.style.backgroundColor = 'yellow';
