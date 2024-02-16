@@ -95,4 +95,19 @@ a {
 }
 .content__main_bottom-text {
   text-align: center;
+}
+.content__client_title {
+  text-align: center;
+}
+.content__client_persons {
+  display: flex;
+}
+.content__client_person {
+  text-align: center;
+}
+.content__sugar {
+  display: flex;
+}
+.content__sugar_img {
+  width: 25%;
 }/*# sourceMappingURL=style.css.map */

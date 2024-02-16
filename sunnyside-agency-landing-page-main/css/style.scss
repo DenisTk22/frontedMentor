@@ -120,4 +120,27 @@ a {
             text-align: center;
         }
     }
+
+    &__client {
+
+        &_title {
+            text-align: center;
+        }
+
+        &_persons {
+            display: flex;
+        }
+
+        &_person {
+            text-align: center;
+        }
+    }
+
+    &__sugar {
+        display: flex;
+        
+        &_img {
+            width: 25%;
+        }
+    }
 }
