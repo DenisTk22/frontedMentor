@@ -17,7 +17,7 @@ a {
 .fraunces {
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 900; //700
     font-style: normal;
     font-variation-settings:
         "SOFT" 50,
@@ -46,7 +46,7 @@ a {
         width: 100%;
         height: 400px;
         background-image: url(../images/desktop/image-header.jpg);
-        background-size:100% 100%;
+        background-size: 100% 100%;
         padding-top: 20px;
         padding-left: 25px;
         padding-right: 25px;
@@ -58,22 +58,39 @@ a {
         align-items: center;
         margin-bottom: 60px;
 
+        &_label {
+            font-family: "Barlow", sans-serif;
+            color: #fff;
+            font-size: 22px;
+        }
+
         &_links {
             display: flex;
             gap: 25px;
             align-items: center;
+            font-family: "Barlow", sans-serif;
+
+
+            &_link {
+                color: #fff;
+            }
 
             &_contact {
                 padding: 10px 15px 10px 15px;
                 background-color: #fff;
                 border-radius: 20px;
+                color: #000;
             }
         }
     }
 
     &__title {
         text-align: center;
-        margin-bottom: 65px;
+        margin-bottom: 50px;
+        font-family: "Fraunces", serif;
+        font-size: 24px;
+        letter-spacing: 5px;
+        color: #fff;
     }
 
     &__arrow {
@@ -99,7 +116,17 @@ a {
             }
 
             &_text {
-                margin-bottom: 20px;
+                margin-bottom: 32px;
+                font-family: "Barlow", sans-serif;
+                font-size: 11px;
+                line-height: 17px;
+                color: rgb(129, 126, 126);
+            }
+
+            &_more {
+                font-family: "Fraunces", serif;
+                font-size: 14px;
+                color: #000;
             }
         }
 
@@ -115,7 +142,7 @@ a {
 
         &_cherry {
             background-image: url(../images/desktop/image-graphic-design.jpg);
-            background-size:100% 100%;
+            background-size: 100% 100%;
             padding-top: 180px;
             // display: flex;
             // flex-direction: column;
@@ -124,7 +151,7 @@ a {
 
         &_orange {
             background-image: url(../images/desktop/image-photography.jpg);
-            background-size:100% 100%;
+            background-size: 100% 100%;
             padding-top: 180px;
             // display: flex;
             // flex-direction: column;
@@ -141,6 +168,12 @@ a {
 
         &_bottom-text {
             text-align: center;
+            font-family: "Barlow", sans-serif;
+            font-size: 11px;
+            line-height: 17px;
+            color: rgb(129, 126, 126);
+            margin-left: 50px;
+            margin-right: 50px;
         }
     }
 
@@ -151,6 +184,9 @@ a {
         &_title {
             text-align: center;
             margin-bottom: 40px;
+            font-family: "Fraunces", serif;
+            font-weight: 700;
+            font-size: 16px;
         }
 
         &_persons {
@@ -167,6 +203,11 @@ a {
 
             &_text {
                 margin-bottom: 25px;
+                text-align: center;
+                font-family: "Barlow", sans-serif;
+                font-size: 11px;
+                line-height: 17px;
+                color: rgb(129, 126, 126);
             }
 
             &_person-name {
@@ -175,12 +216,19 @@ a {
                 font-weight: 700;
                 font-size: 14px;
             }
+
+            &_person-position {
+                font-family: "Barlow", sans-serif;
+                font-size: 11px;
+                line-height: 17px;
+                color: rgb(129, 126, 126);
+            }
         }
     }
 
     &__sugar {
         display: flex;
-        
+
         &_img {
             width: 25%;
         }
@@ -195,13 +243,16 @@ a {
     &__title {
         text-align: center;
         margin-bottom: 30px;
+        font-family: "Barlow", sans-serif;
+        font-weight: 900;
+        font-size: 18px;
     }
 
     &__links {
         display: flex;
         justify-content: center;
         gap: 50px;
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
 
     &__link {
@@ -212,6 +263,10 @@ a {
         display: flex;
         justify-content: center;
         gap: 50px;
-        
+
+    }
+
+    &_social-link {
+        padding: 7px;
     }
 }

@@ -52,19 +52,33 @@ a {
   align-items: center;
   margin-bottom: 60px;
 }
+.content__navigation_label {
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+  font-size: 22px;
+}
 .content__navigation_links {
   display: flex;
   gap: 25px;
   align-items: center;
+  font-family: "Barlow", sans-serif;
+}
+.content__navigation_links_link {
+  color: #fff;
 }
 .content__navigation_links_contact {
   padding: 10px 15px 10px 15px;
   background-color: #fff;
   border-radius: 20px;
+  color: #000;
 }
 .content__title {
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: #fff;
 }
 .content__arrow {
   text-align: center;
@@ -87,7 +101,16 @@ a {
   font-size: 25px;
 }
 .content__main_info_text {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  font-family: "Barlow", sans-serif;
+  font-size: 11px;
+  line-height: 17px;
+  color: rgb(129, 126, 126);
+}
+.content__main_info_more {
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  color: #000;
 }
 .content__main_egg {
   width: 100%;
@@ -116,6 +139,12 @@ a {
 }
 .content__main_bottom-text {
   text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 11px;
+  line-height: 17px;
+  color: rgb(129, 126, 126);
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .content__client {
   padding-bottom: 70px;
@@ -123,6 +152,9 @@ a {
 .content__client_title {
   text-align: center;
   margin-bottom: 40px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 16px;
 }
 .content__client_persons {
   display: flex;
@@ -136,12 +168,23 @@ a {
 }
 .content__client_person_text {
   margin-bottom: 25px;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 11px;
+  line-height: 17px;
+  color: rgb(129, 126, 126);
 }
 .content__client_person_person-name {
   margin-bottom: 5px;
   font-family: "Fraunces", serif;
   font-weight: 700;
   font-size: 14px;
+}
+.content__client_person_person-position {
+  font-family: "Barlow", sans-serif;
+  font-size: 11px;
+  line-height: 17px;
+  color: rgb(129, 126, 126);
 }
 .content__sugar {
   display: flex;
@@ -158,12 +201,15 @@ a {
 .footer__title {
   text-align: center;
   margin-bottom: 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
 }
 .footer__links {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .footer__link {
   padding: 7px;
@@ -172,4 +218,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 50px;
+}
+.footer_social-link {
+  padding: 7px;
 }/*# sourceMappingURL=style.css.map */
