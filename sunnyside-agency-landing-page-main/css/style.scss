@@ -8,6 +8,22 @@ a {
     text-decoration: none;
 }
 
+.barlow-semibold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.fraunces {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 50,
+        "WONK" 0;
+}
+
 .sheet-size {
     width: 715px;
     // height: 1000px;
@@ -70,12 +86,16 @@ a {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 300px 300px 300px;
+        margin-bottom: 70px;
 
         &_info {
             padding-top: 50px;
 
             &_title {
                 margin-bottom: 20px;
+                font-family: "Fraunces", serif;
+                font-weight: 900;
+                font-size: 25px;
             }
 
             &_text {
@@ -114,6 +134,9 @@ a {
         &_bottom-title {
             text-align: center;
             margin-bottom: 20px;
+            font-family: "Fraunces", serif;
+            font-weight: 700;
+            font-size: 16px;
         }
 
         &_bottom-text {
@@ -123,8 +146,11 @@ a {
 
     &__client {
 
+        padding-bottom: 70px;
+
         &_title {
             text-align: center;
+            margin-bottom: 40px;
         }
 
         &_persons {
@@ -133,6 +159,22 @@ a {
 
         &_person {
             text-align: center;
+
+            &_img {
+                border-radius: 70px;
+                margin-bottom: 25px;
+            }
+
+            &_text {
+                margin-bottom: 25px;
+            }
+
+            &_person-name {
+                margin-bottom: 5px;
+                font-family: "Fraunces", serif;
+                font-weight: 700;
+                font-size: 14px;
+            }
         }
     }
 
@@ -142,5 +184,34 @@ a {
         &_img {
             width: 25%;
         }
+    }
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #55b3ae;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 70px;
+    }
+
+    &__link {
+        padding: 7px;
+    }
+
+    &__social-links {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        
     }
 }
