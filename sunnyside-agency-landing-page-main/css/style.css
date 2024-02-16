@@ -82,8 +82,17 @@ a {
 .content__main_cherry {
   background-image: url(../images/desktop/image-graphic-design.jpg);
   background-size: 100% 100%;
+  padding-top: 180px;
 }
 .content__main_orange {
   background-image: url(../images/desktop/image-photography.jpg);
   background-size: 100% 100%;
+  padding-top: 180px;
+}
+.content__main_bottom-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.content__main_bottom-text {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
