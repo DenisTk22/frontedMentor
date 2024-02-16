@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+
+    &__left {
+    
+    }
+
+    &__header {
+        background-image: url(../images/desktop/image-header.jpg);
+    }
+}
