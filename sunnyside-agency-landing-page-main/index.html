@@ -32,22 +32,39 @@
               <a href="#" class="content__navigation_links_link">Projects</a>
               <a href="#" class="content__navigation_links_contact">CONTACT</a>
             </div>
-            <details class="content__navigation_burger">
+             <!-- Реализация появления меню бургера через HTML -->
+            <!-- <details class="content__navigation_burger">
               <summary class="content__navigation_burger_summary">
-                <i class="fa-solid fa-bars fa fa-2x fa_color hover_icon"></i>
+                <i
+                  class="fa-solid fa-bars fa fa-2x fa_color hover_icon your-click"></i>
               </summary>
-              <details open>
-
+              <details>
                 <summary class="content__navigation_burger_menu">
                   <div class="content__navigation_burger_tri"></div>
                   <a href="#" class="content__navigation_links_link">About</a>
-                  <a href="#" class="content__navigation_links_link">Services</a>
-                  <a href="#" class="content__navigation_links_link">Projects</a>
-                  <a href="#" class="content__navigation_links_contact">CONTACT</a>
+                  <a href="#"
+                    class="content__navigation_links_link">Services</a>
+                  <a href="#"
+                    class="content__navigation_links_link">Projects</a>
+                  <a href="#"
+                    class="content__navigation_links_contact">CONTACT</a>
                 </summary>
               </details>
-
-            </details>
+            </details> -->
+            <!-- Реализация появления меню бургера через JS -->
+            <div class="content__navigation_burger">
+              <div class="content__navigation_burger_summary">
+                <i class="fa-solid fa-bars fa fa-2x fa_color hover_icon your-click"></i>
+              </div>
+              <div class="content__navigation_burger_menu">
+                <div class="content__navigation_burger_tri"></div>
+                <a href="#" class="content__navigation_links_link">About</a>
+                <a href="#" class="content__navigation_links_link">Services</a>
+                <a href="#" class="content__navigation_links_link">Projects</a>
+                <a href="#"
+                  class="content__navigation_links_contact">CONTACT</a>
+              </div>
+            </div>
           </nav>
           <p class="content__title">WE ARE CREATIVES</p>
           <div class="content__arrow"><i
@@ -156,5 +173,6 @@
       </div>
     </div>
 
+    <script src="script.js"></script>
   </body>
 </html>

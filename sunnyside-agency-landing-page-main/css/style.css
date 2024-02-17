@@ -266,6 +266,12 @@ a {
   .sheet-size {
     max-width: 320px;
   }
+  .content__title {
+    margin-bottom: 30px;
+  }
+  .content__navigation {
+    margin-bottom: 55px;
+  }
   .content__navigation_links {
     display: none;
   }
@@ -280,6 +286,7 @@ a {
     position: relative;
   }
   .content__navigation_burger_menu {
+    display: none;
     position: absolute;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -289,7 +296,6 @@ a {
     right: 0;
     top: 55px;
     z-index: 1;
-    display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
@@ -301,7 +307,7 @@ a {
     border-right: 10px solid #fff;
     border-bottom: 10px solid #fff;
     right: 0;
-    top: -20px;
+    top: -19px;
   }
   .content__main {
     grid-template-columns: 100%;

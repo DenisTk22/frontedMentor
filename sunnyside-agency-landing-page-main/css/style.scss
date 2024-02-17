@@ -318,7 +318,13 @@ a {
 
     .content {
 
+        &__title {
+            margin-bottom: 30px;
+        }
+
         &__navigation {
+            margin-bottom: 55px;
+
 
             &_links {
                 display: none;
@@ -339,6 +345,7 @@ a {
                 &_summary {}
 
                 &_menu {
+                    display: none;
                     position: absolute;
                     padding-top: 15px;
                     padding-bottom: 15px;
@@ -348,7 +355,7 @@ a {
                     right: 0;
                     top: 55px;
                     z-index: 1;
-                    display: flex;
+                    // display: flex;
                     flex-direction: column;
                     gap: 25px;
                     align-items: center;
@@ -361,7 +368,7 @@ a {
                     border-right: 10px solid #fff;
                     border-bottom: 10px solid #fff;
                     right: 0;
-                    top: -20px;
+                    top: -19px;
                 }
             }
         }
