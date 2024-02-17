@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+.fa_color {
+    color: #86e0f7;
+}
+
 .barlow-semibold {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
@@ -25,7 +29,7 @@ a {
 }
 
 .sheet-size {
-    width: 715px;
+    width: 720px;
     margin: 0 auto;
 }
 
@@ -40,15 +44,18 @@ a {
 }
 
 .content {
+    width: 100%;
 
     &__header {
         width: 100%;
         height: 400px;
         background-image: url(../images/desktop/image-header.jpg);
-        background-size: 100% 100%;
+        background-position: center;
+        background-size: cover;
         padding-top: 20px;
         padding-left: 25px;
         padding-right: 25px;
+        overflow: hidden;
     }
 
     &__navigation {
@@ -61,6 +68,17 @@ a {
             font-family: "Barlow", sans-serif;
             color: #fff;
             font-size: 22px;
+        }
+
+        &_burger {
+            display: none;
+
+            &_summary {
+                display: flex;
+                gap: 25px;
+                align-items: center;
+                font-family: "Barlow", sans-serif;
+            }
         }
 
         &_links {
@@ -134,7 +152,7 @@ a {
                 padding-right: 5px;
                 padding-left: 5px;
                 border-bottom: 3px solid #e5e907;
-                box-shadow: #e5e907 5px ;
+                box-shadow: #e5e907 10px;
             }
         }
 
@@ -150,13 +168,15 @@ a {
 
         &_cherry {
             background-image: url(../images/desktop/image-graphic-design.jpg);
-            background-size: 100% 100%;
+            background-position: center;
+            background-size: cover;
             padding-top: 180px;
         }
 
         &_orange {
             background-image: url(../images/desktop/image-photography.jpg);
-            background-size: 100% 100%;
+            background-position: center;
+            background-size: cover;
             padding-top: 180px;
             // display: flex;
             // flex-direction: column;
@@ -196,6 +216,7 @@ a {
 
         &_persons {
             display: flex;
+            gap: 10px;
         }
 
         &_person {
@@ -208,11 +229,14 @@ a {
 
             &_text {
                 margin-bottom: 25px;
+                padding-left: 10px;
+                padding-right: 10px;
                 text-align: center;
                 font-family: "Barlow", sans-serif;
                 font-size: 11px;
                 line-height: 17px;
                 color: rgb(129, 126, 126);
+
             }
 
             &_person-name {
@@ -263,6 +287,7 @@ a {
     &__link {
         padding: 7px;
         color: #306919;
+
         &:hover {
             color: #fff;
         }
@@ -278,9 +303,90 @@ a {
     &_social-link {
         padding: 7px;
         color: #306919;
-        
-            &:hover {
-                color: #fff;
-            }
+
+        &:hover {
+            color: #fff;
+        }
     }
+}
+
+@media (max-width: 425px) {
+
+    .sheet-size {
+        max-width: 320px;
+    }
+
+    .content {
+
+        &__navigation {
+
+            &_links {
+                display: none;
+
+                &_link {
+                    color: #6d6b6b;
+                }
+
+                &_contact {
+                    background-color: orange;
+                }
+            }
+
+            &_burger {
+                display: block;
+                position: relative;
+
+                &_summary {}
+
+                &_menu {
+                    position: absolute;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 85px;
+                    padding-right: 85px;
+                    background-color: #fff;
+                    right: 0;
+                    top: 55px;
+                    z-index: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    align-items: center;
+                    font-family: "Barlow", sans-serif;
+                }
+
+                &_tri {
+                    position: absolute;
+                    border: 10px solid transparent;
+                    border-right: 10px solid #fff;
+                    border-bottom: 10px solid #fff;
+                    right: 0;
+                    top: -20px;
+                }
+            }
+        }
+
+        &__main {
+
+            grid-template-columns: 100%;
+            grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        }
+
+        &__client {
+
+
+            &_persons {
+                flex-direction: column;
+            }
+        }
+
+        &__sugar {
+            flex-wrap: wrap;
+
+            &_img {
+                width: 50%;
+            }
+        }
+    }
+
 }
